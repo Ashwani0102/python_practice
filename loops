@@ -1,0 +1,66 @@
+# Append all even number from 1 to 20
+even = []
+for i in range(1,20):
+    if i%2==0:
+        even.append(i)
+
+# Append all number from 1 list which is greater than 10 to another list 
+num = [5,12,7,18,3]
+num_10 = []
+for i in range(len(num)):
+    if num[i]>10:
+        num_10.append(num[i])
+
+# Append the colours having more than 3 charaters from a list
+colours = ["red","blue","green","yellow"]
+new_colours = []
+for i in range(len(colours)):
+    if len(colours[i])>3:
+        new_colours.append(colours[i])
+
+# Create a list of squares of numbers from 1 to 10 and only append even number square
+sq = []
+for i in range(1,11):
+    if i%2==0:
+        a=i*i
+        sq.append(a)
+
+# Append names starting from letter 'A' to new list
+names = ["John","Anna","Mike","Chris","Ash"]
+new_list = []
+for i in range(len(names)):
+    if names[i][0]=="A":
+        new_list.append(names[i])
+
+# Append number div by 3 in 1 list and others in another list from a given list
+num = [3,18,15,6,12,7]
+div_by_3 = []
+others = []
+for i in range(len(num)):
+    if num[i]%3==0:
+        div_by_3.append(num[i])
+    else:
+        others.append(num[i])
+
+# Append words that starts with vowel in 1 list and others in 1 list from a given list
+words = ["apple","banana","cat","elephant","dog"]
+vowels = []
+others = []
+for i in range(len(words)):
+    if words[i][0] in ("a","e","i","o","u"):
+        vowels.append(words[i])
+    else:
+        others.append(words[i])
+
+# Append positive number to 1 list , negative number to another & zero to another
+num = [-2,-1,0,3,5,7]
+pos = []
+neg = []
+others = []
+for i in range(len(num)):
+    if num[i]>0:
+        pos.append(num[i])
+    elif num[i]<0:
+        neg.append(num[i])
+    else:
+        others.append(num[i])
