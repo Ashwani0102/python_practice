@@ -53,6 +53,15 @@ while i<len(number):
     if digit>largest_number:
         largest_number=digit
     i=i+1
+
+# Product of digit of a given number 
+n=1234
+result = 1
+while n>0:
+    reminder = n%10
+    result = result*reminder
+    n=n//10
+print(result) 
 print("Largest digit is",largest_number)   
 
 
