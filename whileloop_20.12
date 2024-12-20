@@ -1,0 +1,52 @@
+# No of factors
+num = int(input("Enter the number: "))
+count = 0
+divisor = 1
+while divisor<=num:
+    if num%divisor==0:
+       count = count+1
+    divisor=divisor+1
+print(count)
+
+# Append the factors in list
+num = int(input("Enter the number: "))
+count = 0
+divisor = 1
+list=[]
+while divisor<=num:
+    if num%divisor==0:
+       list.append(divisor)
+       count = count+1
+    divisor=divisor+1
+print(count)
+print("The factors are : ",list)
+
+# Append even factor of a number in list
+num = int(input("Enter the number: "))
+count = 0
+divisor = 1
+list=[]
+while divisor<=num:
+    if num%divisor==0:
+       if divisor%2==0:
+        list.append(divisor)
+       count = count+1
+    divisor=divisor+1
+print(count)
+print("The factors are : ",list)
+
+# Prime number
+num = int(input("Enter the number :"))
+div = 1
+count = 0
+if num<2:
+    print("Number is not prime")
+else:    
+  while div<=num:
+    if num%div==0:
+        count=count+1
+    div=div+1
+  if count==2:
+    print("Number is Prime")
+  else:
+   print("Number is not prime") 
