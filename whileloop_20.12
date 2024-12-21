@@ -50,3 +50,39 @@ else:
     print("Number is Prime")
   else:
    print("Number is not prime") 
+
+# Smallest power of 2 which is greater or equal to a given number
+num = int(input("Enter the number :"))
+result = 1
+if num<1:
+    print("Enter the number greater than 2")
+while result<num:
+      result=result*2
+print("Smallest power of 2 greater and equal to number is",result) 
+
+# Program to keep asking user to enter the positive number until they enter negative number and add all those postive number  
+count = 0
+while True:
+    num = int(input("Enter the num(negative number to stop) :"))
+    if num>=1:
+        count=count+num
+    else:
+        break
+print("Count is :",count)    
+
+# Find all the prime number between 1 to 100
+list = []
+i=2
+while i<=100:
+      is_prime=True
+      div=2
+      while div<i:
+        if i%div==0:
+           is_prime=False
+           break 
+        div=div+1 
+      if is_prime:
+          list.append(i)
+      i=i+1   
+print(list)       
+
