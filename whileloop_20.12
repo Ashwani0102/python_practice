@@ -86,3 +86,37 @@ while i<=100:
       i=i+1   
 print(list)       
 
+
+# Armstrong number between 1 to 1000
+arm =[]
+count=0
+num=1
+while num<=1000:
+      total=0
+      num_dig=len(str(num))
+      temp_num=num
+      while temp_num>0:
+          digit=temp_num%10
+          total +=digit**num_dig
+          temp_num=temp_num//10 
+      if total==num: 
+         count=count+1
+         arm.append(num)  
+      num=num+1   
+print("Number of Armstrong number between 1 to 1000 is :-",count)
+print(arm)
+
+# Smallest Number divisible by all  1 to 10
+n=10
+while True:
+    divible=True
+    i=1
+    while i<=10:
+        if n%i != 0:
+            divible=False
+            break
+        i=i+1
+    if divible:
+        break
+    n=n+1
+print(n) 
