@@ -136,3 +136,19 @@ if count==num:
     print("Factors for that number is :",li) 
 else:
     print("Number is not perfect number") 
+
+# Basic Program to ask user to enter the correct password 3 times
+Password = 0000
+i=1
+correct=False
+while i<=3:
+    a=int(input("Enter the password : "))
+    if a==Password:
+        correct=True
+        break
+    print("Incorrect Password, Try again")
+    i=i+1
+if correct:
+    print("Welcome")   
+else:      
+    print("Contact Administator") 
