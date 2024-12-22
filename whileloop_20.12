@@ -120,3 +120,19 @@ while True:
         break
     n=n+1
 print(n) 
+
+# Program to check if a number is a perfect number
+num = int(input("Enter the number :"))
+i=1
+li=[]
+count=0
+while i<num:
+    if num%i==0:
+        count=count+i
+        li.append(i)
+    i=i+1
+if count==num:
+    print("Number is perfect number")
+    print("Factors for that number is :",li) 
+else:
+    print("Number is not perfect number") 
