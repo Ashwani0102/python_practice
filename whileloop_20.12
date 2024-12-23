@@ -152,3 +152,12 @@ if correct:
     print("Welcome")   
 else:      
     print("Contact Administator") 
+
+# Simimulate 2 dice so that their sum is equal to target number
+target =12
+while True:
+    dice1=int(input("Enter the 1st number"))
+    dice2=int(input("Enter the 2nd number"))
+    if dice1+dice2==target:
+        print("Successful")
+        break
