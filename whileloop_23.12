@@ -13,3 +13,16 @@ while True:
         print("Enter Single character input")    
     else:
          print("Wrong Input, Keep trying")  
+
+# User can input number until it exceeds 10
+sum = 0
+i=0
+maxlimit=10
+while True:
+    num=int(input("Enter the num :"))        
+    sum=sum+num
+    if sum>maxlimit: 
+        print("Limit exceed")  
+        break
+    else:
+     print("Enter more number")
