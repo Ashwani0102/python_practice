@@ -1,0 +1,15 @@
+# Guessing Game
+myno = "A"
+guess=False
+while True:
+    num=input("Enter the digit :")
+    if myno==num:
+        print("Congrats")
+        guess=True
+        break
+    elif num.islower():
+        print("Wrong Input, Keep trying input upper letter only")
+    elif len(num) !=1:
+        print("Enter Single character input")    
+    else:
+         print("Wrong Input, Keep trying")  
