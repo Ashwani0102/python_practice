@@ -26,3 +26,12 @@ while True:
         break
     else:
      print("Enter more number")
+
+# Count down program using import module
+import time
+num = int(input("Enter number for countdown"))
+i=num
+while i>=0:
+    print("Countdown",i)
+    time.sleep(3)
+    i=i-1
