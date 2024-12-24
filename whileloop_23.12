@@ -12,7 +12,19 @@ while True:
     elif len(num) !=1:
         print("Enter Single character input")    
     else:
-         print("Wrong Input, Keep trying")  
+         print("Wrong Input, Keep trying") 
+
+#  Guessing Game
+target=10
+while True:
+    num=int(input("Enter the number"))
+    if target==num:
+        print("Successful")
+        break
+    elif num>target:
+        print("Enter lower number")
+    else:
+        print("Enter Higher number")   
 
 # User can input number until it exceeds 10
 sum = 0
