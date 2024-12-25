@@ -47,3 +47,15 @@ while i>=0:
     print("Countdown",i)
     time.sleep(3)
     i=i-1
+
+#Simulate flipping coin until it lands heads 5 times in a row
+count=0
+while True:
+    coin = input("Flip the coin(enter 'H' for heads and 'T' for tails):")
+    if coin=="H":
+        count=count+1 
+        if count==5:
+            print("Successful")
+            break 
+    else:
+        print("Flip the coin again,Total count so far for heads is :",count)  
