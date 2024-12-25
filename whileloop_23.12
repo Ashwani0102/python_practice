@@ -59,3 +59,15 @@ while True:
             break 
     else:
         print("Flip the coin again,Total count so far for heads is :",count)  
+
+
+# Program to check valid age between 0 to 120
+fixedage=90
+while True:
+    age=int(input("Enter the age between 0 to 120 :"))
+    if age==fixedage:
+        print("Age matched")
+        break
+    else:
+        print("Wrong input. Enter the age again")
+
