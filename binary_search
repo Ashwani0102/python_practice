@@ -43,3 +43,20 @@ while i<=j:
         i=mid
     else: 
         j=mid
+
+# Find whether given number is exist in that list or not and in which index
+li=[1,3,5,7,9,14]
+target=int(input("Enter the number to search : "))
+i=0
+j=len(li)-1
+while i<=j:
+    mid=(i+j)//2
+    if li[mid]==target:
+        print("The index of",target,"is",mid)
+        break
+    elif li[mid]<target:
+        i=mid+1
+    else:
+        j=mid-1    
+else:
+    print("Number doesn't exist in list") 
