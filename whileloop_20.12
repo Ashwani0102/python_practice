@@ -170,3 +170,17 @@ while i<=a:
     fac=fac*i
     i=i+1
 print(fac)  
+
+# Program to keep track of largest and smallest number 
+smallest=float('inf')
+largest=float('-inf')
+while True:
+    number=int(input("Enter the number(negative number to stop) :"))
+    if number<=-1:
+        break
+    elif number<smallest:
+        smallest=number
+    else:
+        largest=number
+print("Smallest number is :",smallest)
+print("Largest number is :",largest)  
