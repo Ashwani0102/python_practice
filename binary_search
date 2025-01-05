@@ -1,0 +1,22 @@
+# #Square root
+sq_number=16
+i=1
+while True:
+    if i*i==sq_number:  
+        print(i)
+        break
+    i=i+1
+
+#Square root search using binary
+sq_number=25
+i=0
+j=sq_number
+while i<=j:
+    mid=(i+j)//2
+    if mid*mid==sq_number:
+        print(mid)
+        break
+    elif mid*mid<sq_number:
+        i=mid+1
+    else: 
+        j=mid-1
