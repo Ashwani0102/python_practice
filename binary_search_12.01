@@ -1,0 +1,54 @@
+# Program to find whether any 2 no's sum in an array equals Target using loop--Time complexity -o(n2)
+li=[2,3,4,5,7]
+target=8
+flag=False
+for i in range(len(li)):
+    for j in range(i+1,len(li)):
+        if li[i]+li[j]==target:
+         print("Index is :",i,j)
+         flag=True
+         break
+if flag==False:
+    print("Not possible")
+
+# Program to find whether any 2 no's sum in an array equals target using binary search Time complexity -o(nlogn)
+li = [2,3,5,7]
+target = 10
+flag=False
+def binary_search(li,index,element,target):
+    left = 0
+    right = len(li)-1
+    search_element = target-element
+    while left <= right:
+        mid = (left+right)//2
+        if li[mid]==search_element and mid != index:
+            return mid
+        elif li[mid]>search_element:
+            right=mid-1
+        else:
+            left= mid+1
+    return -1
+for i in range(len(li)):
+    output = binary_search(li,i,li[i],target)
+    if output != -1:
+        print(i,output)
+        flag=True
+        break    
+else:
+  print("Not possible")
+
+# Program to find whether any 2 no's sum in an array equals target using dictionary--Time complexity -o(n)
+li=[2,3,5,7]
+target=10
+flag=False
+d={}
+for i in range(len(li)):
+    d[li[i]]=i
+for i in range(len(li)):
+    search_element=target-li[i]
+    if search_element in d and d[search_element] != i :
+        print(i,d[search_element])
+        flag=True
+        break
+else:
+  print("Not possible")
