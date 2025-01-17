@@ -89,3 +89,28 @@ for i in words:
         d[length]=[i]    
 print(d) 
 
+# Most Frequent Character in a String
+word="ashwani"
+d={}
+for i in word:
+    if i in d:
+        d[i]=d[i]+1
+    else:
+        d[i]=1
+max_count=0
+max_frequent_charater =""
+for key,value in d.items():
+    if value>max_count:
+        max_count=value
+        max_frequent_charater=key
+print("Max frequency amoung the character is :",max_frequent_charater,"having count as :",max_count) 
+
+# Invert a dictionary
+d1={'a':1,'b':2,'c':1}
+d ={}
+for key,value in d1.items():
+    if value in d:
+       d[value].append(key) 
+    else:
+        d[value]=[key]
+print(d) 
