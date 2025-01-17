@@ -53,3 +53,39 @@ for i in s:
         else:
             d[i]=1
 print(d)
+
+# Count the frequency of element in a list
+li = [1,2,2,3,3,3,4]
+d = {}
+for i in li:
+    if i in d:
+        d[i]=d[i]+1
+    else:
+        d[i]=1    
+print(d) 
+
+# Merge 2 dictionary
+d1={"a":1,"b":2}
+d2={"b":1,"c":1} 
+d={}
+for key,value in d1.items():
+    # d[key]=d1.get(key,value)
+    d[key]=value
+for key,value in d2.items():
+    if key not in d:
+        d[key]=value
+    else:
+        d[key]=d[key] +1       
+print(d)
+
+# Group words by length in dictionary where keys are the lengths of words and value are lists of words of that length
+words =['cat','dog','elephant','bat']
+d = {}
+for i in words:
+    length=len(i)
+    if length in d:
+        d[length].append(i)
+    else:
+        d[length]=[i]    
+print(d) 
+
