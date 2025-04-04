@@ -57,7 +57,7 @@ while i<3:
     i=i+1
 printlinkedlist(head)  
 
-# Creation of Linked list
+# Insertion of value at front in linked list
 class Node:
 
     def __init__(self,val):
@@ -87,4 +87,4 @@ head=insert_at_front(head,2)
 print_linked_list(head)
 print("*"*80)
 head=insert_at_front(head,3)
-print_linked_list
+print_linked_list(head
